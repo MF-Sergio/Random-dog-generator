@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<title>Requisição XMLHttpRequest</title>
+    <style>
+        li::first-letter {
+            text-transform: uppercase;
+        }
+
+        .img_dog-raca {
+            text-transform: uppercase;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body onload="mostrarLista()">
+    <section class="exibicao-de-cachorro">
+        <h1>Imagens Aleatórios de Cachorros</h1>
+        <p>A partir do click no botão abaixo uma nova imagem aleatória de cachorros será carregada utilizando requisições assíncronas com XMLHttpRequest</p>
+
+        <img id="img_dog" alt="Aguardando a imagem ser carregada" style="width: 320px; height: 240px" />
+        <span class="img_dog-raca"></span>
+        <br/>
+        <button onclick="carregarImagens()">Carregar Imagens</button>
+    </section>
+    
+    <br><hr>
+    
+    <section class="exibicao-de-lista">
+        <h2>Lista de Raças</h2>
+        <ul id="breed_list">
+        </ul>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
